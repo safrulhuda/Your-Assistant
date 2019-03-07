@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FC3F7</color>
+    <color name="colorPrimaryDark">#81D4FA</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorBiru">#00ACC1</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBiruPekat">#0097A7</color>
+    <color name="colorAbuabuMuda">#CFD8DC</color>
+    <color name="colorHitam">#000000</color>
+    <color name="colorHijauMuda">#4CAF50</color>
+    <color name="colorHijauBlink">#A5D6A7</color>
+    <color name="colorHijauPutih">#F1F8E9</color>
+    <color name="colorBiruBlink">#81C784</color>
+    <color name="colorOrangeCerah">#FFE082</color>
+    <color name="colorOrangePudar">#fcf0c9</color>
+    <color name="colorMerahPudar">#ef5350</color>
+</resources>

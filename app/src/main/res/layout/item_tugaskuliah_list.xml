@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/colorWhite"
+    tools:context="id.ac.unsyiah.android.yourassistant.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/superLayout1"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:background="@drawable/line"/>
+
+        <RelativeLayout
+            android:id="@+id/superLayout2"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@+id/superLayout1"
+            android:layout_below="@+id/superLayout1"
+            android:background="@drawable/line_dua" />
+
+        <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colorOrangePudar">
+
+            <RelativeLayout
+                android:id="@+id/tipeTugas"
+                android:background="@color/colorBiruBlink"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/inputTipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="saya"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/judulTugas"
+                android:layout_toEndOf="@+id/tipeTugas"
+                android:background="@color/colorOrangeCerah"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/titleTugas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:text="saya"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tDeskrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judulTugas"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/gambarProfilDosen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baseline_description_white_18dp" />
+
+                <TextView
+                    android:id="@+id/desTugas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/gambarProfilDosen"
+                    android:paddingLeft="5dp"
+                    android:text="DESKRIPSI"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorHijauMuda"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/deskTugas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:layout_toEndOf="@+id/gambarProfilDosen"
+                    android:layout_below="@+id/desTugas"
+                    android:text="saya"
+                    android:textColor="@color/colorHitam"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tDeskrip"
+                android:paddingLeft="40dp">
+
+                <ImageView
+                    android:id="@+id/gambarRuangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baseline_event_white_18dp" />
+
+                <TextView
+                    android:id="@+id/TiDeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/gambarRuangan"
+                    android:paddingLeft="5dp"
+                    android:text="DEADLINE"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorMerahPudar"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Ddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:layout_toEndOf="@+id/gambarRuangan"
+                    android:layout_below="@+id/TiDeadline"
+                    android:text="saya"
+                    android:textColor="@color/colorHitam"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/DWaktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/Ddate"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/TiDeadline"
+                    android:text="saya"
+                    android:textColor="@color/colorHitam"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Twaktu"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_list_tugas">
+
+                <ImageView
+                    android:id="@+id/gambarAlarm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/baseline_notification_important_white_18dp" />
+
+                <TextView
+                    android:id="@+id/pengingat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/gambarAlarm"
+                    android:text="1Hari"
+                    android:textColor="@color/colorMerahPudar"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

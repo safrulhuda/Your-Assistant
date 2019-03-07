@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/colorWhite"
+    tools:context="id.ac.unsyiah.android.yourassistant.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/opsiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/judulMK"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/gambarOpsi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/opsiNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/gambarOpsi"
+            android:paddingLeft="5dp"
+            android:text="saya"
+            android:textColor="@color/colorHitam"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="id.ac.unsyiah.android.yourassistant.AddSchedule">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBiru"
+        android:id="@+id/child1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/child1">
+
+        <RelativeLayout
+            android:id="@+id/form1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/child1">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/shadow_effect">
+
+                <RelativeLayout
+                    android:id="@+id/titleForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorBiruBlink"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:id="@+id/alarmIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/baseline_queue_white_18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/alarmIcon"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/pengisian_tugas"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/form2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/titleForm"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp">
+
+                    <TextView
+                        android:id="@+id/titleKodeMK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Judul Tugas"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/namaTugas"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/titleKodeMK"
+                        android:background="@drawable/shadow_effect_fieldtext"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Nama Tugas"
+                        android:inputType="none"
+                        android:textColor="@color/colorHitam"
+                        android:textColorHint="@color/colorAbuabuMuda" />
+
+                    <TextView
+                        android:id="@+id/titleMK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/namaTugas"
+                        android:text="Deskripsi"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/deskripsiTugas"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/titleMK"
+                        android:background="@drawable/shadow_effect_fieldtext"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="Keterangan Tugas"
+                        android:inputType="none"
+                        android:textColor="@color/colorHitam"
+                        android:textColorHint="@color/colorAbuabuMuda" />
+
+                    <RelativeLayout
+                        android:id="@+id/spinnerLayoutPertama"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/deskripsiTugas"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/titleTipe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Pilih Tipe Tugas"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/pilihTipeTugas"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/titleTipe"
+                            android:background="@drawable/spinner_border"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/pilihTipeTugas"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/titleTipe"
+                            android:background="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/DeadlineL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spinnerLayoutPertama"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageDateAc"
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/titleRuangan"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/baseline_date_range_black_18dp" />
+
+                        <TextView
+                            android:id="@+id/titleRuangan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/imageDateAc"
+                            android:text="Tanggal Deadline"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/DLDate"
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/imageDateAc"
+                            android:background="@drawable/shadow_effect_fieldtext"
+                            android:focusable="false"
+                            android:hint="2018.12.02"
+                            android:textAlignment="center"
+                            android:inputType="none"
+                            android:textColor="@color/colorHitam"
+                            android:textColorHint="@color/colorAbuabuMuda" />
+
+                        <ImageView
+                            android:id="@+id/imageTimeAc"
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/titleRuangan"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="170dp"
+                            android:background="@drawable/baseline_av_timer_black_18dp" />
+
+                        <TextView
+                            android:id="@+id/TWaktu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/imageTimeAc"
+                            android:text="Waktu Deadline"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/DLTime"
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:layout_alignBaseline="@+id/DLDate"
+                            android:layout_alignBottom="@+id/DLDate"
+                            android:layout_toEndOf="@+id/DLDate"
+                            android:background="@drawable/shadow_effect_fieldtext"
+                            android:focusable="false"
+                            android:hint="00:00"
+                            android:textAlignment="center"
+                            android:inputType="none"
+                            android:textColor="@color/colorHitam"
+                            android:textColorHint="@color/colorAbuabuMuda" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/spinnerLayout"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/DeadlineL"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/titlePengingat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Pilih Pengingat"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/hariPengingat"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/titlePengingat"
+                            android:background="@drawable/spinner_border"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/hariPengingat"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/titlePengingat"
+                            android:background="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/simpanTugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/spinnerLayout"
+                        android:background="@drawable/button_shadow"
+                        android:layout_marginTop="10dp"
+                        android:text="Simpan"
+                        android:textColor="@color/colorWhite" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/child2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorBiruPekat"
+        android:minWidth="30dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Task"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

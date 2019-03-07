@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Your Assistant</string>
+    <string name="form">Pengisian Jadwal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addjadwal">addJadwal</string>
+    <string name="pengisian_tugas">Pengisian Tugas</string>
+    <string name="keluar">Keluar</string>
+    <string name="cover">cover</string>
+</resources>

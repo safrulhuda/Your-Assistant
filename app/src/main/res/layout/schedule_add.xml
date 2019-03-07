@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="id.ac.unsyiah.android.yourassistant.AddSchedule">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBiru"
+        android:id="@+id/child1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/child1">
+    <RelativeLayout
+        android:id="@+id/form1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/child1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shadow_effect">
+
+            <RelativeLayout
+                android:id="@+id/titleForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimaryDark"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/alarmIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/baseline_alarm_add_white_18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/alarmIcon"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/form"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/form2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/titleForm"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/titleKodeMK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:text="Kode Mata Kuliah"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/kodeMK"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/titleKodeMK"
+                    android:background="@drawable/shadow_effect_fieldtext"
+                    android:ems="10"
+                    android:hint="MPA101"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="@color/colorHitam"
+                    android:textColorHint="@color/colorAbuabuMuda" />
+
+                <TextView
+                    android:id="@+id/titleMK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/kodeMK"
+                    android:text="Nama Mata Kuliah"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mataKuliah"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/titleMK"
+                    android:background="@drawable/shadow_effect_fieldtext"
+                    android:ems="10"
+                    android:hint="Pemrograman"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="@color/colorHitam"
+                    android:textColorHint="@color/colorAbuabuMuda" />
+
+                <TextView
+                    android:id="@+id/titleDosen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/mataKuliah"
+                    android:text="Dosen"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/dosen"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/titleDosen"
+                    android:background="@drawable/shadow_effect_fieldtext"
+                    android:ems="10"
+                    android:hint="Nama Dosen"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="@color/colorHitam"
+                    android:textColorHint="@color/colorAbuabuMuda" />
+
+                <TextView
+                    android:id="@+id/titleRuangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/dosen"
+                    android:text="Ruangan"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ruangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/titleRuangan"
+                    android:background="@drawable/shadow_effect_fieldtext"
+                    android:hint="R204"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="@color/colorHitam"
+                    android:textColorHint="@color/colorAbuabuMuda" />
+
+                <RelativeLayout
+                    android:id="@+id/spinnerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/ruangan"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/titleHari"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Pilih Hari Kuliah"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/hari"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/titleHari"
+                        android:background="@drawable/spinner_border"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/hari"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/titleHari"
+                        android:background="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/titleWaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/spinnerLayout"
+                    android:text="Waktu"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/waktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/titleWaktu"
+                    android:background="@drawable/shadow_effect_fieldtext"
+                    android:hint="00:00"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="@color/colorHitam"
+                    android:textColorHint="@color/colorAbuabuMuda" />
+
+                <Button
+                    android:id="@+id/simpanJadwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/waktu"
+                    android:background="@drawable/button_shadow"
+                    android:text="Simpan"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/child2"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorBiruPekat"
+        android:minWidth="30dp">
+
+        <TextView
+            android:id="@+id/formHari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Form"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tambahJadwal"
+        android:enabled="true"
+        android:icon="@drawable/baseline_alarm_add_white_18dp"
+        android:title="@string/addjadwal"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/keluarApp"
+        android:enabled="true"
+        android:icon="@drawable/baseline_more_vert_white_18dp"
+        android:title="@string/keluar"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/colorWhite"
+    tools:context="id.ac.unsyiah.android.yourassistant.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorHijauPutih">
+
+        <RelativeLayout
+            android:id="@+id/kode"
+            android:background="@color/colorBiruBlink"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/mkCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="saya"
+                android:textStyle="italic"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/judulMK"
+            android:layout_toEndOf="@+id/kode"
+            android:background="@color/colorHijauBlink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/judulMatakuliah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:text="saya"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Tdosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judulMK"
+            android:paddingLeft="40dp">
+
+            <ImageView
+                android:id="@+id/gambarProfilDosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_supervisor_account_black_18dp" />
+
+            <TextView
+                android:id="@+id/TiDosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/gambarProfilDosen"
+                android:paddingLeft="5dp"
+                android:text="DOSEN"
+                android:textStyle="bold"
+                android:textColor="@color/colorBiruBlink"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/namaDosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_toEndOf="@+id/gambarProfilDosen"
+                android:layout_below="@+id/TiDosen"
+                android:text="saya"
+                android:textColor="@color/colorHitam"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/TRuangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tdosen"
+            android:paddingLeft="40dp">
+
+            <ImageView
+                android:id="@+id/gambarRuangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_meeting_room_black_18dp" />
+
+            <TextView
+                android:id="@+id/TiRuangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/gambarRuangan"
+                android:paddingLeft="5dp"
+                android:text="RUANGAN"
+                android:textStyle="bold"
+                android:textColor="@color/colorBiruBlink"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/listRuangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_toEndOf="@+id/gambarRuangan"
+                android:layout_below="@+id/TiRuangan"
+                android:text="saya"
+                android:textColor="@color/colorHitam"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Twaktu"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border">
+
+            <ImageView
+                android:id="@+id/gambarAlarm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/listWaktu"
+                android:background="@drawable/baseline_access_alarm_white_18dp" />
+
+            <TextView
+                android:id="@+id/listWaktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:text="00:00"
+                android:textColor="@color/colorHitam"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/namaMataKuliah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="45dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:text="saya"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
